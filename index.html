@@ -50,7 +50,7 @@
         <!-- Logo & Personal Brand -->
         <div class="brand">
             <a href="/" aria-label="Home - My Personal Profile">
-                <img src="/assets/icons/profile-logo.svg" alt="My Personal Profile Logo" width="48" height="48">
+                <img src="public/icon.png" alt="My Personal Profile Logo" width="48" height="48">
                 <span>My Personal Profile</span>
             </a>
         </div>
@@ -59,17 +59,16 @@
         <nav aria-label="Main navigation">
             <ul>
                 <li><a href="/" aria-label="Home page">Home</a></li>
-                <li><a href="/about-me.html">About Me</a></li>
-                <li><a href="/skills.html">Skills</a></li>
-                <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#featured-projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
         <!-- Quick Actions -->
         <div class="header-actions">
-            <a href="/assets/documents/cv-fernando-mulato.pdf" download aria-label="Download CV in PDF format">CV</a>
+            <a href="public/cv-fernando-mulato.pdf" download aria-label="Download CV in PDF format">CV</a>
 
             <!-- Language Selector -->
             <select aria-label="Select language">
@@ -92,12 +91,6 @@
                 I’m a Systems Engineering student passionate about software engineering and full-stack development. I’m continuously improving my skills to build modern, scalable, and meaningful digital solutions that create real value.
             </p>
 
-            <!-- Call to Actions -->
-            <div class="hero-actions">
-                <a href="#featured-projects">View My Projects</a>
-                <a href="/contact.html">Contact Me</a>
-            </div>
-
             <!-- Quick Stats -->
             <div class="hero-stats">
                 <div>
@@ -105,11 +98,11 @@
                     <span>Years learning</span>
                 </div>
                 <div>
-                    <data value="0">0+</data>
+                    <data value="3">3+</data>
                     <span>Completed projects</span>
                 </div>
                 <div>
-                    <data value="1">1+</data>
+                    <data value="13">13+</data>
                     <span>Technologies</span>
                 </div>
             </div>
@@ -117,16 +110,16 @@
             <!-- Profile Image -->
             <figure>
                 <picture>
-                    <source media="(min-width: 768px)" srcset="/assets/images/profile/fernando-desktop.webp" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="/assets/images/profile/fernando-desktop.jpg" type="image/jpg">
-                    <img src="/assets/images/profile/fernando-movil.jpg" alt="Fernando Mulato - System Engineering Student" width="500" height="500" loading="eager">
+                    <source media="(min-width: 768px)" srcset="public/fernando-desktop_800x805.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="public/fernando-desktop_800x805.jpg" type="image/jpg">
+                    <img src="public/fernando-mobile_400x403.jpg" alt="Fernando Mulato - System Engineering Student" width="500" height="500" loading="eager">
                 </picture>
             </figure>
             <figcaption>Fernando Mulato in his workspace</figcaption>
         </section>
 
         <!-- About Me Section -->
-        <section aria-labelledby="about-title">
+        <section id="about-me" aria-labelledby="about-title">
             <h2 id="about-title">My Journey in Software Engineering & Full‑Stack Development</h2>
 
             <p>
@@ -135,7 +128,7 @@
 
             <blockquote>
                 <p>
-                    "Good design is obvious. Great design is... (your personal philosophy here)."
+                    “My learning is a journey, not a race. I don’t aim to know everything at once. I move forward with discipline, consistency, and patience, enjoying the process of becoming a better engineer.”
                 </p>
                 <cite>- My learning philosophy</cite>
             </blockquote>
@@ -156,7 +149,6 @@
                 <dd>Aiming for innovative solutions</dd>
             </dl>
 
-            <a href="/about-me.html">Learn more about me →</a>
         </section>
 
         <!-- Featured Projects -->
@@ -170,8 +162,8 @@
             <article>
                 <figure>
                     <picture>
-                        <source type="image/webp" srcset="/assets/images/projects/first-site.webp">
-                        <img src="/assets/images/projects/first-site.jpg" alt="Screenshot of my first software project" width="800" height="600" loading="lazy">
+                        <source type="image/webp" srcset="public/website-under-construction.webp">
+                        <img src="public/website-under-construction.jpg" alt="Screenshot of my first software project" width="800" height="600" loading="lazy">
                     </picture>
                     <figcaption>My First Product Management System</figcaption>
                 </figure>
@@ -216,55 +208,92 @@
         </section>
 
         <!-- Skills Section -->
-        <section aria-labelledby="skills-title"> 
+        <section id="skills" aria-labelledby="skills-title"> 
             <h2 id="skills-title">My Skills</h2>
 
-            <h3>Technologies I'm learning</h3>
+            <h3>Technologies</h3>
+            <h5>Backend</h5>
             <ul>
                 <li>
-                    <img src="/assets/icons/html5.svg" alt="" width="40" height="40" aria-hidden="true">
-                    <span>HTML5 & Semantics</span>
-                    <progress value="75" max="100" aria-label="75% mastery">75%</progress>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java icon" width="40" height="40" aria-hidden="true">
+                    <span>Java</span>
+                    <progress value="30" max="100" aria-label="75% mastery">30%</progress>
                 </li>
                 <li>
-                    <img src="/assets/icons/css3.svg" alt="" width="40" height="40" aria-hidden="true">
-                    <span>CSS3 & Design</span>
-                    <progress value="60" max="100" aria-label="60% mastery">60%</progress>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg" alt="csharp icon" width="40" height="40" aria-hidden="true">
+                    <span>Csharp</span>
+                    <progress value="70" max="100" aria-label="60% mastery">70%</progress>
                 </li>
                 <li>
-                    <img src="/assets/icons/javascript.svg" alt="" width="40" height="40" aria-hidden="true">
-                    <span>JavaScript (Beginner)</span>
-                    <progress value="20" max="100" aria-label="20% mastery">20%</progress>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python icon" width="40" height="40" aria-hidden="true">
+                    <span>Python</span>
+                    <progress value="75" max="100" aria-label="20% mastery">75%</progress>
                 </li>
+            </ul>
+            <h5>Frontend</h5>
+            <ul>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" alt="" width="40" height="40" aria-hidden="true">
+                    <span>HTML5</span>
+                    <progress value="60" max="100" aria-label="75% mastery">60%</progress>
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" alt="" width="40" height="40" aria-hidden="true">
+                    <span>CSS3</span>
+                    <progress value="5" max="100" aria-label="60% mastery">5%</progress>
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="" width="40" height="40" aria-hidden="true">
+                    <span>Typescript</span>
+                    <progress value="5" max="100" aria-label="20% mastery">5%</progress>
+                </li>
+            </ul>
+            <h5>Frameworks</h5>
+            <ul>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring icon" width="40" height="40" aria-hidden="true">
+                    <span>Spring</span>
+                    <progress value="5" max="100" aria-label="75% mastery">5%</progress>
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Angular icon" width="40" height="40" aria-hidden="true">
+                    <span>Angular</span>
+                    <progress value="5" max="100" aria-label="60% mastery">5%</progress>
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django icon" width="40" height="40" aria-hidden="true">
+                    <span>Django</span>
+                    <progress value="0" max="100" aria-label="20% mastery">0%</progress>
+                </li>
+            </ul>
+            <h5>Other Tools and Technologies</h5>
+            <ul>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git icon" width="40" height="40" aria-hidden="true">
+                    <span>Git</span>
+                    <progress value="40" max="100" aria-label="75% mastery">40%</progress>
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" alt="Postgresql icon" width="40" height="40" aria-hidden="true">
+                    <span>Postgresql</span>
+                    <progress value="5" max="100" aria-label="60% mastery">5%</progress>
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB icon" width="40" height="40" aria-hidden="true">
+                    <span>MongoDB</span>
+                    <progress value="0" max="100" aria-label="20% mastery">0%</progress>
+                </li>
+                <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Nodejs icon" width="40" height="40" aria-hidden="true">
+                    <span>Nodejs</span>
+                    <progress value="5" max="100" aria-label="20% mastery">5%</progress>
+                </li>
+                
             </ul>
         </section>
 
-        <!-- Recent Blog -->
-        <section aria-labelledby="blog-title">
-            <h2 id="blog-title">My Learning Blog</h2>
-            <p>I share my experience learning system engineering.</p>
-
-            <!-- Post 1 -->
-            <article>
-                <time datetime="2025-01-15">January 15, 2025</time>
-                <h3><a href="/blog/my-first-month.html">My First Month Learning HTML</a></h3>
-                <p>Reflections on what I learned during my first month studying system engineering.</p>
-                <span>5 min read</span>
-            </article>
-
-            <!-- Post 2 -->
-            <article>
-                <time datetime="2025-01-08">January 8, 2025</time>
-                <h3><a href="/blog/useful-resources.html">5 Free Resources to Learn HTML</a></h3>
-                <p>The best resources I found to start learning system engineering from scratch.</p>
-                <span>3 min read</span>
-            </article>
-
-            <a href="/blog.html">View all articles →</a>
-        </section>
-
         <!-- Call To Action -->
-        <section aria-labelledby="cta-title">
+        <section id="contact" aria-labelledby="cta-title">
             <h2 id="cta-title">Would you like to connect?</h2>
             <p>
                 I'm always looking to learn from other developers, share experiences, and collaborate on interesting projects.
