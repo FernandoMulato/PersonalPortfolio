@@ -40,8 +40,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="body">
     <!-- ========================================
     MAIN HEADER
     ======================================== -->
@@ -49,16 +52,16 @@
     <header role="banner">
         <!-- Logo & Personal Brand -->
         <div class="brand">
-            <a href="/" aria-label="Home - My Personal Profile">
+            <a href="#body" aria-label="Home - My Personal Profile" class="header__brand--a">
                 <img src="public/icon.png" alt="My Personal Profile Logo" width="48" height="48">
                 <span>My Personal Profile</span>
             </a>
         </div>
 
         <!-- Main Navigation -->
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="/" aria-label="Home page">Home</a></li>
+        <nav aria-label="Main navigation" class="mainNavegation">
+            <ul class="mainNavegation__ul">
+                <li><a href="#body" aria-label="Home page">Home</a></li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#featured-projects">Projects</a></li>
@@ -67,7 +70,7 @@
         </nav>
 
         <!-- Quick Actions -->
-        <div class="header-actions">
+        <div class="header__actions">
             <a href="public/cv-Fernando-Mulato.pdf" download aria-label="CV in format pdf">CV</a>
 
             <!-- Language Selector -->

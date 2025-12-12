@@ -1,0 +1,36 @@
+header {
+    height: 60px;
+    border-bottom: 1px solid #eee; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: white;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.mainNavegation {
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.mainNavegation__ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+main {
+    padding-top: 120px;
+}
