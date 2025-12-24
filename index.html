@@ -49,19 +49,17 @@
     MAIN HEADER
     ======================================== -->
 
-    <header role="banner">
-        <!-- Logo & Personal Brand -->
-        <div class="brand">
-            <a href="#home" aria-label="Home - My Personal Profile" class="header__brand--a">
-                <img src="public/icon.png" alt="My Personal Profile Logo" width="48" height="48">
-                <span>My Personal Profile</span>
-            </a>
-        </div>
+    <header class="header" role="banner">
+        <!-- Brand -->
+        <a href="#home" aria-label="Home - My Personal Profile" class="header__brand">
+            <img src="public/icon.png" alt="My Personal Profile Logo" width="40" height="40">
+            <span>My Personal Profile</span>
+        </a>
 
-        <!-- Main Navigation -->
-        <nav aria-label="Main navigation" class="mainNavegation">
+        <!-- Navigation -->
+        <nav class="header__nav" aria-label="Main navigation">
             <ul>
-                <li><a href="#home" aria-label="Home page">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#featured-projects">Projects</a></li>
@@ -69,16 +67,10 @@
             </ul>
         </nav>
 
-        <!-- Quick Actions -->
-        <div class="header__actions">
-            <a href="public/cv-Fernando-Mulato.pdf" download aria-label="CV in format pdf">CV</a>
-
-            <!-- Language Selector -->
-            <select aria-label="Select language">
-                <option value="en" selected>EN</option>
-                <option value="es">ES</option>
-            </select>
-        </div>
+        <!-- Action -->
+        <a href="public/cv-Fernando-Mulato.pdf" download class="header__cv">
+            CV
+        </a>
     </header>
 
     <!-- ========================================
@@ -87,178 +79,162 @@
     <main id="main-content" role="main">
 
         <!-- Hero Section -->
-        <section aria-labelledby="hero-title">
-            <h1 id="hero-title">Hi! I'm Fernando Mulato</h1>
-            <p><strong>System Engineering Student</strong></p>
-            <p>
-                I’m a Systems Engineering student passionate about software engineering and back-end development. I’m continuously improving my skills to build modern, scalable, and meaningful digital solutions that create real value.
-            </p>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <h1 id="hero-title">Hi! I'm Fernando Mulato</h1>
+                <p class="hero__role"><strong>System Engineering Student</strong></p>
 
-            <!-- Quick Stats -->
-            <div class="hero-stats">
-                <div>
-                    <data value="3">3+</data>
-                    <span>Years learning</span>
-                </div>
-                <div>
-                    <data value="3">3+</data>
-                    <span>Completed projects</span>
-                </div>
-                <div>
-                    <data value="13">13+</data>
-                    <span>Technologies</span>
+                <p class="hero__description">
+                    I’m a Systems Engineering student passionate about software engineering and back-end development.
+                    I’m continuously improving my skills to build modern, scalable, and meaningful digital solutions.
+                </p>
+
+                <div class="hero-stats">
+                    <div>
+                        <data value="3">3+</data>
+                        <span>Years learning</span>
+                    </div>
+                    <div>
+                        <data value="3">3+</data>
+                        <span>Projects</span>
+                    </div>
+                    <div>
+                        <data value="10">10+</data>
+                        <span>Technologies</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- Profile Image -->
-            <figure>
+            <figure class="hero__image">
                 <picture>
                     <source media="(min-width: 768px)" srcset="public/fernando-desktop_800x805.webp" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="public/fernando-desktop_800x805.jpg" type="image/jpg">
-                    <img src="public/fernando-mobile_400x403.jpg" alt="Fernando Mulato - System Engineering Student" width="500" height="500" loading="eager">
+                    <img src="public/fernando-mobile_400x403.jpg"
+                        alt="Fernando Mulato - System Engineering Student"
+                        width="400"
+                        height="400">
                 </picture>
+                <figcaption>Fernando Mulato in his workspace</figcaption>
             </figure>
-            <figcaption>Fernando Mulato in his workspace</figcaption>
         </section>
+
 
         <!-- About Me Section -->
         <section id="about-me" aria-labelledby="about-title">
-            <h2 id="about-title">My Journey in Software Engineering & Back-end Development</h2>
+            <h2 id="about-title">My Journey in Software Engineering</h2>
 
             <p>
-                I am a <strong>system engineering student</strong> learning fundamental principles of software engineering and back-end development to build aesthetic, optimized, and functional systems.
+                I am a <strong>System Engineering student</strong> learning the foundations of
+                software engineering and back-end development to build optimized and functional systems.
             </p>
 
             <blockquote>
                 <p>
-                    “My learning is a journey, not a race. I don’t aim to know everything at once. I move forward with discipline, consistency, and patience, enjoying the process of becoming a better engineer.”
+                    “My learning is a journey, not a race. I move forward with discipline,
+                    consistency, and patience.”
                 </p>
-                <cite>- My learning philosophy</cite>
+                <cite>— My learning philosophy</cite>
             </blockquote>
 
-            <!-- Personal Values -->
             <h3>My Values</h3>
             <dl>
                 <dt>Dedication</dt>
                 <dd>Committed to learning every day</dd>
 
                 <dt>Curiosity</dt>
-                <dd>Always exploring new technologies</dd>
+                <dd>Exploring new technologies constantly</dd>
 
                 <dt>Community</dt>
                 <dd>Learning and sharing with others</dd>
 
                 <dt>Creativity</dt>
-                <dd>Aiming for innovative solutions</dd>
+                <dd>Looking for innovative solutions</dd>
             </dl>
-
         </section>
 
+
         <!-- Featured Projects -->
-        <section id="featured-projects" aria-label="Featured Projects">
+        <section id="featured-projects" aria-labelledby="projects-title">
             <h2 id="projects-title">My Practice Projects</h2>
+
             <p>
-                Each project represents my growth in software engineering and back-end development — from simple systems to progressively more complex solutions.
+                Each project reflects my growth in software engineering and back-end development.
             </p>
 
-            <!-- Project 1 -->
-            <article>
+            <article class="project-card">
                 <figure>
                     <picture>
                         <source type="image/webp" srcset="public/website-under-construction.webp">
-                        <img src="public/website-under-construction.jpg" alt="Screenshot of ...." width="800" height="600" loading="lazy">
+                        <img src="public/website-under-construction.jpg"
+                            alt="Project under construction"
+                            width="800"
+                            height="600">
                     </picture>
-                    <figcaption>i'm working on it </figcaption>
+                    <figcaption>Project in progress</figcaption>
                 </figure>
 
-                <h3>i'm working on it </h3>
+                <h3>Project in progress</h3>
+
                 <p>
-                    i'm working on it ...
+                    A personal project focused on practicing clean architecture,
+                    responsive design, and backend integration.
                 </p>
 
-                <h4>What I learned:</h4>
+                <h4>What I learned</h4>
                 <ul>
-                    <li>...</li>
-                    <li>...</li>
-                    <li>...</li>
-                    <li>...</li>
-                    <li>in progress ...</li>
+                    <li>Semantic HTML</li>
+                    <li>CSS architecture</li>
+                    <li>Backend structure</li>
+                    <li>REST principles</li>
                 </ul>
 
-                <h4>Technologies used:</h4>
-                <ul>
+                <h4>Technologies</h4>
+                <ul class="tech-list">
                     <li>HTML5</li>
                     <li>CSS3</li>
-                    <li>Typescript</li>
                     <li>Java</li>
                     <li>Spring Boot</li>
                     <li>Angular</li>
                     <li>PostgreSQL</li>
                 </ul>
 
-                <h4>Project achievements:</h4>
-                <div>
-                    <data value="0">0%</data> ...
+                <div class="project-links">
+                    <a href="#">Project details</a>
+                    <a href="#" target="_blank" rel="noopener">Live demo →</a>
                 </div>
-                <div>
-                    <data value="0">0%</data> ...
-                </div>
-                <div>
-                    <data value="0">0%</data> in progress ...
-                </div>
-
-                <a href="/projects/first-site.html">Project details</a>
-                <a href="https://demo.my-first-site.com" target="_blank" rel="noopener">View demo →</a>
             </article>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" aria-labelledby="skills-title"> 
+        <section id="skills" aria-labelledby="skills-title">
             <h2 id="skills-title">My Skills</h2>
 
-            <h3>Technologies</h3>
-            <h5>Backend</h5>
-            <ul>
-                <li>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java icon" width="40" height="40" aria-hidden="true">
+            <h3>Backend</h3>
+            <ul class="skills-grid">
+                <li class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java">
                     <span>Java</span>
-                    <progress value="80" max="100" aria-label="80% mastery">80%</progress>
+                    <progress value="80" max="100"></progress>
                 </li>
-                <li>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg" alt="csharp icon" width="40" height="40" aria-hidden="true">
-                    <span>Csharp</span>
-                    <progress value="80" max="100" aria-label="80% mastery">80%</progress>
+
+                <li class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg" alt="C#">
+                    <span>C#</span>
+                    <progress value="80" max="100"></progress>
                 </li>
-                <li>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python icon" width="40" height="40" aria-hidden="true">
+
+                <li class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python">
                     <span>Python</span>
-                    <progress value="75" max="100" aria-label="75% mastery">75%</progress>
+                    <progress value="75" max="100"></progress>
                 </li>
             </ul>
-            <h5>Frontend</h5>
-            <ul>
-                <li>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" alt="" width="40" height="40" aria-hidden="true">
-                    <span>HTML5</span>
-                    <progress value="60" max="100" aria-label="60% mastery">60%</progress>
-                </li>
-                <li>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" alt="" width="40" height="40" aria-hidden="true">
-                    <span>CSS3</span>
-                    <progress value="5" max="100" aria-label="5% mastery">5%</progress>
-                </li>
-                <!-- <li>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="" width="40" height="40" aria-hidden="true">
-                    <span>Typescript</span>
-                    <progress value="5" max="100" aria-label="5% mastery">5%</progress>
-                </li> -->
-            </ul>
-            <h5>Frameworks</h5>
-            <ul>
-                <li>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring icon" width="40" height="40" aria-hidden="true">
-                    <span>Spring</span>
-                    <progress value="10" max="100" aria-label="10% mastery">10%</progress>
+
+            <h3>Frameworks</h3>
+            <ul class="skills-grid">
+                <li class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring icon">
+                    <span>Spring Boot</span>
+                    <progress value="40" max="100"></progress>
                 </li>
                 <!-- <li>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Angular icon" width="40" height="40" aria-hidden="true">
@@ -266,78 +242,120 @@
                     <progress value="5" max="100" aria-label="5% mastery">5%</progress>
                 </li> -->
             </ul>
-            <h5>Other Tools and Technologies</h5>
-            <ul>
-                <li>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git icon" width="40" height="40" aria-hidden="true">
-                    <span>Git</span>
-                    <progress value="40" max="100" aria-label="40% mastery">40%</progress>
+
+            <h3>Frontend</h3>
+            <ul class="skills-grid">
+                <li class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" alt="HTML">
+                    <span>HTML5</span>
+                    <progress value="60" max="100"></progress>
                 </li>
-                <li>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-plain.svg" alt="Postman icon" width="40" height="40" aria-hidden="true">
-                    <span>Postman</span>
-                    <progress value="40" max="100" aria-label="40% mastery">40%</progress>
-                </li>
-                <li>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-plain.svg" alt="Notion icon" width="40" height="40" aria-hidden="true">
-                    <span>Notion</span>
-                    <progress value="80" max="100" aria-label="80% mastery">80%</progress>
-                </li>
-                <li>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" alt="SQLDeveloper icon" width="40" height="40" aria-hidden="true">
-                    <span>SQLDeveloper</span>
-                    <progress value="80" max="100" aria-label="80% mastery">80%</progress>
+
+                <li class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" alt="CSS">
+                    <span>CSS3</span>
+                    <progress value="50" max="100"></progress>
                 </li>
                 <!-- <li>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="" width="40" height="40" aria-hidden="true">
+                    <span>Typescript</span>
+                    <progress value="5" max="100" aria-label="5% mastery">5%</progress>
+                </li> -->
+            </ul>
+
+            <h3>Other Tools and Technologies</h3>
+            <ul class="skills-grid">
+                <li class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
+                    <span>Git</span>
+                    <progress value="70" max="100"></progress>
+                </li>
+
+                <li class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-plain.svg" alt="Notion">
+                    <span>Notion</span>
+                    <progress value="80" max="100"></progress>
+                </li>
+                <li class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-plain.svg" alt="Postman">
+                    <span>Postman</span>
+                    <progress value="60" max="100"></progress>
+                </li>
+                <li class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg">
+                    <span>SQLdeveloper</span>
+                    <progress value="90" max="100"></progress>
+                </li>
+                <!--<li>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" alt="Postgresql icon" width="40" height="40" aria-hidden="true">
                     <span>Postgresql</span>
                     <progress value="5" max="100" aria-label="5% mastery">5%</progress>
-                </li> -->
-                <!-- <li>
+                </li> 
+                <li>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB icon" width="40" height="40" aria-hidden="true">
                     <span>MongoDB</span>
                     <progress value="0" max="100" aria-label="0% mastery">0%</progress>
-                </li> -->
-                <!-- <li>
+                </li>
+                <li>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Nodejs icon" width="40" height="40" aria-hidden="true">
                     <span>Nodejs</span>
                     <progress value="5" max="100" aria-label="5% mastery">5%</progress>
                 </li> -->
-                
             </ul>
         </section>
 
+
         <!-- Call To Action -->
         <section id="contact" aria-labelledby="cta-title">
-            <h2 id="cta-title">Would you like to connect?</h2>
-            <p>
-                I'm always looking to learn from other developers, share experiences, and collaborate on interesting projects.
-            </p>
+            <div class="cta-card">
+                <h2 id="cta-title">Would you like to connect?</h2>
 
-            <div>
-                <h3>Practice Projects</h3>
-                <p>Have an idea? Let's collaborate and learn together.</p>
-                <a href="mailto:juniormulato139@gmail.com?subject=Query&body=Hi, I want to do a new project!">Collaborate</a>
+                <p>
+                    I'm always open to collaboration, learning, and sharing ideas with other developers.
+                </p>
+
+                <a href="mailto:juniormulato139@gmail.com?subject=Collaboration">
+                    Let’s collaborate
+                </a>
             </div>
         </section>
+
     </main>
 
     <!-- ========================================
     FOOTER
     ======================================== -->
     <footer role="contentinfo">
-        <section aria-labelledby="footer-about">
-            <h2 id="footer-about">My Personal Profile</h2>
-            <p>Personal portfolio of Fernando Mulato. Learning system engineering one day at a time.</p>
-        </section>
-        <section aria-labelledby="footer-icons-social-media">
-            <ul>
-                <li><a href="https://github.com/FernandoMulato" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Github icon" width="30" height="30" aria-hidden="true"></a></li>
-                <li><a href="https://www.linkedin.com/in/fernando-mulato-b2a3a9392/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="X icon" width="30" height="30" aria-hidden="true"></a></li>
-                <li><a href="https://www.instagram.com/fechomll_jr?igsh=c21rZXF2bnJzZmJq" target="_blank"><img src="https://cdn.simpleicons.org/instagram/000000" alt="instagram icon" width="30" height="30" aria-hidden="true"></a></li>
-                <li><a href="https://x.com/FernandoM120302?t=UOQYXLFECX3zeL2FowtDaQ&s=08" target="_blank"><img src="https://cdn.simpleicons.org/x/000000" alt="X icon" width="30" height="30" aria-hidden="true"></a></li>
-            </ul>
-        </section>
-    </footer>
+    <p>
+        © 2025 Fernando Mulato — System Engineering Student
+    </p>
+
+    <ul class="social-links">
+        <li>
+            <a href="https://github.com/FernandoMulato" target="_blank" rel="noopener">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.linkedin.com/in/fernando-mulato-b2a3a9392/" target="_blank" rel="noopener">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="LinkedIn">
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.instagram.com/fechomll_jr" target="_blank" rel="noopener">
+                <img src="https://cdn.simpleicons.org/instagram/000000" alt="Instagram">
+            </a>
+        </li>
+        <li>
+            <a href="https://x.com/FernandoM120302?t=UOQYXLFECX3zeL2FowtDaQ&s=08" target="_blank">
+                <img src="https://cdn.simpleicons.org/x/000000" alt="X icon">
+            </a>
+        </li>
+    </ul>
+</footer>
+
+
 </body>
 </html>
