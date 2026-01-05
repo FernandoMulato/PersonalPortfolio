@@ -1,0 +1,116 @@
+\documentclass[11pt,a4paper]{article}
+
+% -------------------- Paquetes --------------------
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% -------------------- Configuración --------------------
+\geometry{margin=2.2cm}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{
+  \large\bfseries
+}{}{0em}{}[\titlerule]
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+% -------------------- Documento --------------------
+\begin{document}
+
+% -------------------- Encabezado --------------------
+\begin{center}
+    {\LARGE \textbf{Henry Fernando Mulato Llanten}} \\[6pt]
+    Popayán, Colombia \\
+    \href{mailto:juniormulato139@gmail.com}{juniormulato139@gmail.com} \,|\, 
+    +57 323 499 1641
+\end{center}
+
+\vspace{0.3cm}
+
+% -------------------- Perfil Profesional --------------------
+\section*{Perfil Profesional}
+Estudiante de \textbf{Ingeniería de Sistemas} en cuarto año, con enfoque en \textbf{ingeniería de software}. Interesado en desempeñarse como \textbf{practicante}, especialmente en \textbf{desarrollo Full-Stack}. Cuento con experiencia académica y personal en la construcción de aplicaciones web utilizando buenas prácticas, arquitecturas monolíticas y de microservicios. Me caracterizo por el aprendizaje continuo, la responsabilidad y el trabajo en equipo.
+
+% -------------------- Formación Académica --------------------
+\section*{Formación Académica}
+\textbf{Ingeniería de Sistemas} \hfill Cuarto año \\
+Universidad del Cauca \\
+Popayán, Colombia
+
+% -------------------- Certificaciones --------------------
+\section*{Certificaciones}
+
+\textbf{Desarrollo Web Full-Stack} \\
+Insignia Digital -- Dev Senior Code LLC \hfill Noviembre 2025 \\
+Verificación: 
+\href{https://profiles.badgeclaimed.com/user-7607/badges/urn:uuid:5e202a56-f507-46a2-9437-632c9271510e.html}{Ver credencial}
+
+
+% -------------------- Proyectos Personales --------------------
+\section*{Proyectos Personales}
+
+\textbf{Tienda Virtual -- Proyecto Full-Stack}
+\begin{itemize}[leftmargin=*]
+    \item Desarrollo de una aplicación web de comercio electrónico básica.
+    \item Arquitectura \textbf{monolítica}.
+    \item Backend implementado con \textbf{Spring Boot y Java}.
+    \item Frontend desarrollado en \textbf{Angular}, usando \textbf{TypeScript y CSS}.
+    \item Persistencia de datos con \textbf{PostgreSQL}.
+\end{itemize}
+
+\textbf{Sistema de Reservas -- Salón de Belleza}
+\begin{itemize}[leftmargin=*]
+    \item Desarrollo de un sistema para la gestión y reserva de servicios.
+    \item Arquitectura basada en \textbf{microservicios}.
+    \item Backend con \textbf{Spring Boot y Java}.
+    \item Frontend en \textbf{Angular}, utilizando \textbf{TypeScript y CSS}.
+    \item Base de datos \textbf{PostgreSQL} y comunicación entre servicios.
+\end{itemize}
+
+% -------------------- Habilidades Técnicas --------------------
+\section*{Habilidades Técnicas}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Lenguajes:} Java, C\#, Python, JavaScript, TypeScript
+    \item \textbf{Backend:} Spring Boot
+    \item \textbf{Frontend:} Angular, HTML, CSS
+    \item \textbf{Bases de datos:} SQL developer, PostgreSQL
+    \item \textbf{Arquitecturas:} Monolítica, Microservicios
+    \item \textbf{Control de versiones:} Git, Github
+    \item \textbf{Conceptos:} Estructura de datos, Bases de datos, Patrones de diseño, REST APIs, CRUD, lógica de programación
+\end{itemize}
+
+% -------------------- Habilidades Blandas --------------------
+\section*{Habilidades Blandas}
+\begin{itemize}[leftmargin=*]
+    \item Trabajo en equipo
+    \item Responsabilidad y compromiso
+    \item Aprendizaje rápido
+    \item Comunicación efectiva
+    \item Organización y gestión del tiempo
+\end{itemize}
+
+% -------------------- Idiomas --------------------
+\section*{Idiomas}
+\begin{itemize}[leftmargin=*]
+    \item Español: Nativo
+    \item Inglés: Básico (en proceso de mejora)
+\end{itemize}
+
+% -------------------- Objetivo Profesional --------------------
+\section*{Objetivo Profesional}
+Obtener una oportunidad como \textbf{desarrollador junior Full-Stack}, donde pueda aplicar mis conocimientos, fortalecer mis habilidades técnicas y crecer profesionalmente en el área de desarrollo de software.
+
+\vspace{0.3cm}
+\textit{Referencias disponibles a solicitud}
+
+\end{document}
