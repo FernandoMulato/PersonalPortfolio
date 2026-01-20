@@ -42,44 +42,154 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- Styles -->
+    <!-- REMIXICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
     <link rel="stylesheet" href="styles.css">
+    <!-- <a href="#home" class="header__brand">
+        <img src="public/icon.png" alt="Logo" width="36" height="36">
+        <span>Fernando</span>
+      </a> -->
+
+      <!-- Hamburger button -->
+      <!-- <button
+        class="header__toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button> -->
+
+      <!-- Menu -->
+      <!-- <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
+          <li>
+            <a class="header__cv" href="public/cv-Fernando-Mulato.pdf" download>
+              CV
+            </a>
+          </li>
+        </ul>
+      </nav> -->
   </head>
-  <body id="home" >
+  <body id="home">
     <!-- ========================================
     MAIN HEADER
     ======================================== -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo">FM</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#home" class="nav__link">Home</a>
+            </li>
 
-    <header class="header" role="banner">
-      <!-- Brand -->
-      <a href="#home" aria-label="Home - My Personal Profile" class="header__brand">
-        <img src="public/icon.png" alt="My Personal Profile Logo" width="40" height="40">
-        <span>My Personal Portfolio</span>
-      </a>
+            <li>
+              <a href="#about" class="nav__link">About</a>
+            </li>
 
-      <!-- Navigation -->
-      <nav class="header__nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#featured-projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+            <li>
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#resume" class="nav__link">Resume</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
+        </div>
+
+        <!-- Toggle menu -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
       </nav>
-
-      <!-- Action -->
-      <a href="public/cv-Fernando-Mulato.pdf" download class="header__cv">
-        CV
-      </a>
     </header>
 
     <!-- ========================================
     MAIN CONTENT
     ======================================== -->
-    <main id="main-content" role="main">
+    <main class="main">
+      <!-- HOME -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <div class="home__image">
+              <img src="public/meNew.png" alt="image" class="home__img">
+            </div>
+
+            <div class="home__social">
+              <a href="https://www.linkedin.com/in/fernando-mulato-b2a3a9392/" target="_blank" class="home__link">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+              <a href="https://github.com/FernandoMulato" target="_blank" class="home__link">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="https://dribbble.com/" target="_blank" class="home__link">
+                <i class="ri-dribbble-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__data grid">
+            <p class="home__subtitle">
+              <!-- Insert the professions into the js file (HOME TYPED JS), then save. -->
+              Hi, I'm a <span id="home-typed"></span>
+            </p>
+
+            <h1 class="home__title">Fernando Mulato</h1>
+
+            <p class="home__description">
+              Systems Engineering student passionate about software engineering
+              and software architecture.I’m continuously improving my skills to 
+              build modern, scalable, and meaningful digital solutions.
+            </p>
+
+            <div class="home__buttons">
+              <a href="public/cv-Fernando-Mulato.pdf" download="" target="_blank" class="button">Download CV</a>
+              <a href="#projects" class="button button__ghost">Projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about section" id="about">
+
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects section" id="projects">
+
+      </section>
+
+      <!-- RESUME -->
+      <section class="resume section" id="resume">
+
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+
+      </section>
 
       <!-- Hero Section -->
-      <section class="hero" aria-labelledby="hero-title">
+      <!-- <section class="hero" aria-labelledby="hero-title">
         <div class="hero__content">
           <h1 id="hero-title">Hi! I'm Fernando Mulato</h1>
           <p class="hero__role"><strong>System Engineering Student</strong></p>
@@ -115,11 +225,11 @@
           </picture>
           <figcaption>Fernando Mulato in his workspace</figcaption>
         </figure>
-      </section>
+      </section> -->
 
 
       <!-- About Me Section -->
-      <section id="about-me" aria-labelledby="about-title">
+      <!-- <section id="about-me" aria-labelledby="about-title">
         <h2 id="about-title">My Journey in Software Engineering</h2>
 
         <p>
@@ -149,11 +259,11 @@
           <dt>Creativity</dt>
           <dd>Looking for innovative solutions</dd>
         </dl>
-      </section>
+      </section> -->
 
 
       <!-- Featured Projects -->
-      <section id="featured-projects" aria-labelledby="projects-title">
+      <!-- <section id="featured-projects" aria-labelledby="projects-title">
         <h2 id="projects-title">My Practice Projects</h2>
 
         <p>
@@ -202,10 +312,10 @@
             <a href="#" target="_blank" rel="noopener">Live demo →</a>
           </div>
         </article>
-      </section>
+      </section> -->
 
       <!-- Skills Section -->
-      <section id="skills" aria-labelledby="skills-title">
+      <!-- <section id="skills" aria-labelledby="skills-title">
         <h2 id="skills-title">My Skills</h2>
 
         <h3>Languages</h3>
@@ -290,7 +400,7 @@
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg">
             <span>SQLdeveloper</span>
             <progress value="90" max="100"></progress>
-          </li>
+          </li> -->
           <!--<li>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" alt="Postgresql icon" width="40" height="40" aria-hidden="true">
             <span>Postgresql</span>
@@ -306,12 +416,12 @@
             <span>Nodejs</span>
             <progress value="5" max="100" aria-label="5% mastery">5%</progress>
           </li> -->
-        </ul>
-      </section>
+        <!-- </ul>
+      </section> -->
 
 
       <!-- Call To Action -->
-      <section id="contact" aria-labelledby="cta-title">
+      <!-- <section id="contact" aria-labelledby="cta-title">
         <div class="cta-card">
           <h2 id="cta-title">Would you like to connect?</h2>
 
@@ -325,11 +435,11 @@
         </div>
       </section>
 
-    </main>
+    </main> -->
     <!-- ========================================
     FOOTER
     ======================================== -->
-    <footer role="contentinfo">
+    <!-- <footer role="contentinfo">
       <p>
         © 2025 Fernando Mulato — System Engineering Student
       </p>
@@ -358,6 +468,21 @@
           </a>
         </li>
       </ul>
-    </footer>
+    </footer> -->
+
+    <!--========== SCROLL UP ==========-->
+      
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+    <!--=============== TYPED JS ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script.js" defer></script>
   </body>
 </html>
